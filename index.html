@@ -9,8 +9,9 @@
     <!-- Include Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <asset:stylesheet src="smart_wizard_theme_arrows.css"/>
-    <asset:stylesheet src="smart_wizard.css"/>
+    <link href="../dist/css/smart_wizard.css" rel="stylesheet" type="text/css" /> 
+	<link href="../dist/css/smart_wizard_theme_arrows.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
 <a href="#create-applicationForm" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
@@ -694,7 +695,7 @@
 
 
 <!-- Include SmartWizard JavaScript source -->
-<asset:javascript src="jquery.smartWizard.min.js"/>
+<script type="text/javascript" src="../dist/js/jquery.smartWizard.min.js"></script>
 
 <script type="text/javascript">
     $(document).ready(function(){
