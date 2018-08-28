@@ -600,7 +600,11 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label for="sample.stained1">Do any need to be stained? <span style="color: red">*</span></label><br>
-                            <g:select name="sample.stained1" id="sample.stained1" from="['Yes', 'No']" value="${age}" noSelection="['':'']" style="width:180px;height:30px;"/>
+                            <select>
+                            	<option value=""></option>
+  								<option value="Yes">Yes</option>
+  								<option value="No">No</option>
+							</select>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -645,14 +649,22 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label for="sample.slideType2">Type of slide <span style="color: red">*</span></label><br>
-                            <g:select name="sample.slideType2" id="sample.slideType2" from="['Charged', 'Uncharged']" value="${age}" noSelection="['':'']" style="width:180px;height:30px;"/>
+                            <select>
+                            	<option value=""></option>
+  								<option value="Charged">Charged</option>
+  								<option value="Uncharged">Uncharged</option>
+							</select>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label for="sample.stained2">Do any need to be stained? <span style="color: red">*</span></label><br>
-                            <g:select name="sample.stained2" id="sample.stained2" from="['Yes', 'No']" value="${age}" noSelection="['':'']" style="width:180px;height:30px;"/>
+                            <select>
+                            	<option value=""></option>
+  								<option value="Yes">Yes</option>
+  								<option value="No">No</option>
+							</select>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -698,7 +710,12 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label for="dataRequirements">Please select <span style="color: red">*</span></label><br>
-                            <g:select name="dataRequirements" id="dataRequirements" from="['Pathology Report', 'None', 'Other']" value="${age}" noSelection="['':'']" style="width:180px;height:30px;" required=""/>
+                            <select>
+                            	<option value=""></option>
+  								<option value="Pathology Report">Pathology Report</option>
+  								<option value="None">None</option>
+  								<option value="Other">Other</option>
+							</select>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
