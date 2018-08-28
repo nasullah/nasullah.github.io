@@ -227,7 +227,11 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label for="researchFunder.researchFunderName">Please select <span style="color: red">*</span></label><br>
-                            <g:select name="researchFunder.researchFunderName" from="['Commercial', 'NHS', 'University']" value="${age}" noSelection="['':'']" style="width:180px;height:30px;" required=""/>
+                            <select>
+  								<option value="Commercial">Commercial</option>
+  								<option value="NHS">NHS</option>
+  								<option value="University">University</option>
+							</select>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
