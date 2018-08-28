@@ -360,7 +360,12 @@
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label for="consentForUseInResearch.formType">Form type <span style="color: red">*</span></label>
-                            <g:select name="consentForUseInResearch.formType" from="['RTB consent form', 'NHS consent form', 'Study-specific consent form', 'Exempt']" value="${age}" noSelection="['':'']" style="width:180px;height:30px;" required=""/>
+                            <select>
+  								<option value="RTB consent form">RTB consent form</option>
+  								<option value="NHS consent form">NHS consent form</option>
+  								<option value="Study-specific consent form">Study-specific consent form</option>
+  								<option value="Exempt">Exempt</option>
+							</select>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -446,7 +451,11 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label for="mTAArranged">Please select <span style="color: red">*</span></label><br>
-                            <g:select name="mTAArranged" id="mTAArranged" from="['Yes', 'No Needed', 'Within CTA']" value="${age}" noSelection="['':'']" style="width:180px;height:30px;" required=""/>
+                            <select>
+  								<option value="Yes">Yes</option>
+  								<option value="No Needed">No Needed</option>
+  								<option value="Within CTA">Within CTA</option>
+							</select>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -510,7 +519,10 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label for="trial.nHSPathologist">Please select <span style="color: red">*</span></label><br>
-                            <g:select name="trial.nHSPathologist" from="['Yes', 'No']" value="${age}" noSelection="['':'']" style="width:180px;height:30px;" required=""/>
+                            <select>
+  								<option value="Yes">Yes</option>
+  								<option value="No">No</option>
+							</select>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -530,7 +542,11 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label for="timePoint">Timepoint <span style="color: red">*</span></label><br>
-                            <g:select name="timePoint" id="timePoint"  from="['Screening', 'Disease progression', 'End of study']" value="" noSelection="['':'']" style="width:180px;height:30px;" required=""/>
+                            <select>
+  								<option value="Screening">Screening</option>
+  								<option value="Disease progression">Disease progression</option>
+  								<option value="End of study">End of study</option>
+							</select>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -539,7 +555,11 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label for="sampleSampleType1">What is required? <span style="color: red">*</span></label><br>
-                            <g:select name="sample.sampleType1" id="sampleSampleType1" onChange="unstainedSection1()" from="['Unstained sections', 'Study samples that need processing and embedding, to turn it into a FFPE block', 'Archival block']" value="" noSelection="['':'']" style="width:440px;height:30px;"/>
+                            <select id="sampleSampleType1" onChange="unstainedSection1()">
+  								<option value="Unstained sections">Unstained sections</option>
+  								<option value="Study samples that need processing and embedding, to turn it into a FFPE block">Study samples that need processing and embedding, to turn it into a FFPE block</option>
+  								<option value="Archival block">Archival block</option>
+							</select>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -563,6 +583,10 @@
                         <div class="form-group">
                             <label for="sample.slideType1">Type of slide <span style="color: red">*</span></label><br>
                             <g:select name="sample.slideType1" id="sample.slideType1" from="['Charged', 'Uncharged']" value="${age}" noSelection="['':'']" style="width:180px;height:30px;"/>
+                            <select">
+  								<option value="Charged">Charged</option>
+  								<option value="Uncharged">Uncharged</option>
+							</select>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -586,7 +610,11 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label for="sample.sampleType2">What is required? <span style="color: red">*</span></label><br>
-                            <g:select name="sample.sampleType2" id="sampleSampleType2" onChange="unstainedSection2()" from="['Unstained sections', 'Study samples that need processing and embedding, to turn it into a FFPE block', 'Archival block']" value="" noSelection="['':'']" style="width:440px;height:30px;"/>
+                            <select id="sampleSampleType2" onChange="unstainedSection2()">
+  								<option value="Unstained sections">Unstained sections</option>
+  								<option value="Study samples that need processing and embedding, to turn it into a FFPE block">Study samples that need processing and embedding, to turn it into a FFPE block</option>
+  								<option value="Archival block">Archival block</option>
+							</select>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
